@@ -75,3 +75,46 @@ function render(destination, target) {
   }
   destination.appendChild(target);
 }
+
+const CardList = () => {
+  return createElement(
+    "div",
+    { className: "divider" },
+    [1, 2, 3, 4, 5].map((item, index) => {
+      return Card({ index });
+    })
+  );
+};
+
+const Card = props => {
+  const onButtonClick = e => {
+    console.log("Clicked", e);
+  };
+
+  return createElement("div", { className: "card" }, [
+    createElement("div", { className: "card-header" }, "Featured"),
+    createElement("div", { className: "card-body" }, [
+      createElement(
+        "h5",
+        { className: "card-title" },
+        "Special title treatment"
+      ),
+      createElement(
+        "p",
+        { className: "card-text" },
+        "With supporting text below as a natural lead-in to additional content."
+      ),
+      createElement(
+        "a",
+        {
+          href: "#",
+          className: "btn btn-primary",
+          onclick: onButtonClick.bind(null, props.index)
+        },
+        "Go somewhere"
+      )
+    ])
+  ]);
+};
+
+render(document.getElementById("root"), CardList);
