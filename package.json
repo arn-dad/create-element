@@ -1,0 +1,20 @@
+{
+  "name": "create-dom-node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dadayanArn/create-element.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dadayanArn/create-element/issues"
+  },
+  "homepage": "https://github.com/dadayanArn/create-element#readme"
+}
