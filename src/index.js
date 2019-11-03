@@ -11,12 +11,12 @@
  */
 
 /**
- * Imlementetion of render function
+ * Implementation of the render function
  *  Description
  *
- * function must recive two arguments
- * 1. Destination where created element should be rendered
- * 2. Target element which will insert in to DOM
+ * function must receive two arguments
+ * 1. A destination where the created element should be rendered
+ * 2. Target element which will insert into DOM
  *
  * @NOTE The destination can be div with some id usually it called root or app
  * @NOTE Target can be DOM element or a function
